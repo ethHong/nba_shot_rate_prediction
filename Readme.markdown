@@ -9,8 +9,8 @@
 * Compared Logistic Regression, XGBoost and Neural Network to compare results of accuracy, precision, recall, and ROC AUC - differences in evaluation metric were not large, but Neural Network showed highest validation score.
 
 * Even with parameter tuning & feature engineering, prediction showed limitation for certain probability range: 
-  * Shot attempts with high probability prediction (0.5~1.0) were mostly successful shot, while low prediction (0~0.3) were mostly failed shots, implying that the prediction is working well.
-  * However, the model prodiction for 0.3~0.5 range probability could not distinguish successful shots and failed shots.
+  * Shot attempts with high probability prediction (0.5 to 1.0) were mostly successful shot, while low prediction (0 to 0.3) were mostly failed shots, implying that the prediction is working well.
+  * However, the model prodiction for 0.3 to 0.5 range probability could not distinguish successful shots and failed shots.
   * This turned out to be 'shot distance' is one of the important feature (longer distance shots are less likely to be successful), but ***under current NBA trend number of attempts & success rate of 3pt shots are comparativelty higher.***
 
 Under the common sense, success rate of 3-point shots are considered to be low, but since more and more NBA players are becoming skillful in 3-point shots, it's not easy to predict success rate of 3-point shots with one model. 
